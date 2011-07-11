@@ -25,13 +25,11 @@
 	<div id="header-container">
 		<header class="wrapper">
 			<h1 id="title">musings</h1>
-			<!--<nav>
-				<!--<ul>
-					<li><a href="#">Some</a></li>
-					<li><a href="#">navigation</a></li>
-					<li><a href="#">links</a></li>
+			<nav>
+				<ul>
+					<li><a href="history-state-api">History state api</a></li>
 				</ul>
-			</nav>-->
+			</nav>
 		</header>
 	</div>
 	<div id="main" class="wrapper">
