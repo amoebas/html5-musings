@@ -24,7 +24,7 @@
 <body>
 	<div id="header-container">
 		<header class="wrapper">
-			<h1 id="title">musings</h1>
+			<h1 id="title">musings on HTML5</h1>
 			<nav>
 				<ul>
 					<li><a href="history-state-api">History state api</a></li>

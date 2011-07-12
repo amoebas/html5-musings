@@ -22,7 +22,8 @@ function getImageName( $getVars ) {
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<link rel="stylesheet" href="css/style.css?v=2">
+		<link rel="stylesheet" href="/css/style.css?v=2">
+		<link rel="stylesheet" href="css/history.css?v=2">
 
 		<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -31,12 +32,13 @@ function getImageName( $getVars ) {
 	<body>
 		<div id="header-container">
 			<header class="wrapper">
-				<h1 id="title">HTML5: History </h1>
+				<h1 id="title">musings on pushstate</h1>
 				<nav>
 					<ul>
-						<li><a href="/img/01.jpg">Image one</a></li>
-						<li><a href="/img/02.jpg">Image two</a></li>
-						<li><a href="/img/03.jpg">Image three</a></li>
+                        <li><a href="/.">Go back</a></li>
+						<li class="image"><a href="/img/01.jpg">Image one</a></li>
+						<li class="image"><a href="/img/02.jpg">Image two</a></li>
+						<li class="image"><a href="/img/03.jpg">Image three</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -71,7 +73,7 @@ function getImageName( $getVars ) {
                 if( !supports_history_api ) {
                     return;
                 }
-				jQuery('nav a').click(function(event){
+				jQuery('nav li.image a').click(function(event){
 					window.history.pushState({href: jQuery(this).attr('href') }, 'Title', '/history-state-api/?image=' + jQuery(this).attr('href')   )
 					changeTitleForURL( jQuery(this).attr('href') );
 					return false;
