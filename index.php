@@ -28,6 +28,7 @@
 			<nav>
 				<ul>
 					<li><a href="history-state-api">History state api</a></li>
+					<li><a href="localstorage">Localstorage</a></li>
 				</ul>
 			</nav>
 		</header>
