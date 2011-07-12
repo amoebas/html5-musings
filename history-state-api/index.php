@@ -17,7 +17,7 @@ function getImageName( $getVars ) {
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		
 		<title>Musings on pushstate</title>
-		<meta name="description" content="This is a small test">
+		<meta name="description" content="Demo of the html5 pushState and popState or how I manipulate the browsers history">
 		<meta name="author" content="stig lindqvist">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
