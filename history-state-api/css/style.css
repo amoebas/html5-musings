@@ -148,14 +148,17 @@ aside{
 	color:white;
 	padding:20px;
 	float:right;
-	height:500px;
+	height:300px;
 	width:200px;
 	background-color:#2965f1;
-	border-bottom:20px solid #264de4;
 	margin-bottom:50px;
 	-webkit-box-shadow:0 0px 40px -10px #AAA;
 	-moz-box-shadow:0 0px 40px -10px #AAA;
 	box-shadow:0 0px 40px -10px #AAA;	
+}
+
+aside img {
+	border: #000 1px solid;
 }
 
 #main p{
