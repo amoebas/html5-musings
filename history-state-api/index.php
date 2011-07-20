@@ -60,11 +60,17 @@ function getImageName( $getVars ) {
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 		<script type="text/javascript">
+            function supports_history_api() {
+                return !!(window.history && history.pushState);
+            }
 			var changeTitleForURL = function( URL ) {
 				$('#content').html('<img src="'+URL+'" />');
 			}
 
 			jQuery(document).ready(function(){
+                if( !supports_history_api ) {
+                    return;
+                }
 				jQuery('nav a').click(function(event){
 					window.history.pushState({href: jQuery(this).attr('href') }, 'Title', '/history-state-api/?image=' + jQuery(this).attr('href')   )
 					changeTitleForURL( jQuery(this).attr('href') );
